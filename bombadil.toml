@@ -1,0 +1,9 @@
+# Path to your dotfile directory containing this config file (relative to $HOME).
+dotfiles_dir = "dotfiles"
+
+# Dotfiles template with their respective `source` template and `target` directories.
+[settings.dots]
+
+# A dot entry representing a symlink, `source` is relative to `dotfiles_dir`
+# and `target` shall be relative to $HOME directory or absolute.
+sway = { source = "sway", target = ".config/sway" }
