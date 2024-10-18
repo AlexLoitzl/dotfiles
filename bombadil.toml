@@ -7,3 +7,5 @@ dotfiles_dir = "dotfiles"
 # A dot entry representing a symlink, `source` is relative to `dotfiles_dir`
 # and `target` shall be relative to $HOME directory or absolute.
 sway = { source = "sway", target = ".config/sway" }
+doom = { source = "doom", target = ".config/doom" }
+alacritty = { source = "alacritty", target = ".config/alacritty" }
