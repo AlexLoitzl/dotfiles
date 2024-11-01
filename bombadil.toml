@@ -3,9 +3,11 @@ dotfiles_dir = "dotfiles"
 
 # Dotfiles template with their respective `source` template and `target` directories.
 [settings.dots]
-
 # A dot entry representing a symlink, `source` is relative to `dotfiles_dir`
 # and `target` shall be relative to $HOME directory or absolute.
-sway = { source = "sway", target = ".config/sway" }
+sway = { source = "sway/config", target = ".config/sway", vars = "sway/vars.toml" }
 doom = { source = "doom", target = ".config/doom" }
 alacritty = { source = "alacritty", target = ".config/alacritty" }
+
+[profiles.work.dots]
+sway = {source ="sway/config", target = ".config/sway", vars = "sway/work-vars.toml"}

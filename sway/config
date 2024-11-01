@@ -30,6 +30,9 @@ set $right-output "{{monitors.right}}"
 output $left-output {{monitors.left_config}}
 output $right-output {{monitors.right_config}}
 
+# Room for additional commands
+{{monitors.additional}}
+
 font pango:Fira Code Semibold 9
 
 ### Idle configuration
@@ -73,7 +76,7 @@ font pango:Fira Code Semibold 9
     bindsym $mod+Shift+c reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Shift+e exec swaynag -t warning -m 'Do you really want to exit sway?' -B 'Yes, exit sway' 'swaymsg exit'
 #
 # Moving around:
 #
