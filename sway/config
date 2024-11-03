@@ -221,6 +221,11 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 5-
 bindsym $mod+XF86MonBrightnessDown  exec busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n -500
 bindsym $mod+XF86MonBrightnessUp exec busctl --user set-property rs.wl-gammarelay / rs.wl.gammarelay Brightness d 1.0 && busctl --user set-property rs.wl-gammarelay / rs.wl.gammarelay Temperature q 6500
 
+# Volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+
 # LOOKS
 gaps inner 2px
 smart_gaps on
