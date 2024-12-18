@@ -34,6 +34,9 @@
   (push "Symbola" (cadr (assoc "Mathematical Alphanumeric Symbols" unicode-fonts-block-font-mapping))))
 
 (after! unicode-fonts
+  (push "Fira Mono" (cadr (assoc "Geometric Shapes" unicode-fonts-block-font-mapping))))
+
+(after! unicode-fonts
   (push "Noto Color Emoji" (cadr (assoc "Miscellaneous Symbols and Pictographs" unicode-fonts-block-font-mapping))))
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
