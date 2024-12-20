@@ -21,8 +21,8 @@
 
 (defun iris-input-config ()
   "Set up math input for Iris.
-Based on https://gitlab.mpi-sws.org/iris/iris/-/blob/master/docs/editor.md, and
-https://github.com/tchajed/dotfiles/blob/master/emacs/doom/%2Bcoq.el"
+    Based on https://gitlab.mpi-sws.org/iris/iris/-/blob/master/docs/editor.md, and
+    https://github.com/tchajed/dotfiles/blob/master/emacs/doom/%2Bcoq.el"
 
   ;; Input method for the minibuffer
   (defun my-inherit-input-method ()
@@ -97,6 +97,34 @@ https://github.com/tchajed/dotfiles/blob/master/emacs/doom/%2Bcoq.el"
     ("__a" ?ₐ) ("__e" ?ₑ) ("__h" ?ₕ) ("__i" ?ᵢ) ("__k" ?ₖ)
     ("__l" ?ₗ) ("__m" ?ₘ) ("__n" ?ₙ) ("__o" ?ₒ) ("__p" ?ₚ)
     ("__r" ?ᵣ) ("__s" ?ₛ) ("__t" ?ₜ) ("__u" ?ᵤ) ("__v" ?ᵥ) ("__x" ?ₓ)
+
+    ;; Greek alphabet
+    ("\\Alpha"    ?Α) ("\\alpha"    ?α)
+    ("\\Beta"     ?Β) ("\\beta"     ?β)
+    ("\\Gamma"    ?Γ) ("\\gamma"    ?γ)
+    ("\\Delta"    ?Δ) ("\\delta"    ?δ)
+    ("\\Epsilon"  ?Ε) ("\\epsilon"  ?ε)
+    ("\\Zeta"     ?Ζ) ("\\zeta"     ?ζ)
+    ("\\Eta"      ?Η) ("\\eta"      ?η)
+    ("\\Theta"    ?Θ) ("\\theta"    ?θ)
+    ("\\Iota"     ?Ι) ("\\iota"     ?ι)
+    ("\\Kappa"    ?Κ) ("\\kappa"    ?κ)
+    ("\\Lamda"    ?Λ) ("\\lamda"    ?λ)
+    ("\\Lambda"   ?Λ) ("\\lambda"   ?λ)
+    ("\\Mu"       ?Μ) ("\\mu"       ?μ)
+    ("\\Nu"       ?Ν) ("\\nu"       ?ν)
+    ("\\Xi"       ?Ξ) ("\\xi"       ?ξ)
+    ("\\Omicron"  ?Ο) ("\\omicron"  ?ο)
+    ("\\Pi"       ?Π) ("\\pi"       ?π)
+    ("\\Rho"      ?Ρ) ("\\rho"      ?ρ)
+    ("\\Sigma"    ?Σ) ("\\sigma"    ?σ)
+    ("\\Tau"      ?Τ) ("\\tau"      ?τ)
+    ("\\Upsilon"  ?Υ) ("\\upsilon"  ?υ)
+    ("\\Phi"      ?Φ) ("\\phi"      ?φ)
+    ("\\Chi"      ?Χ) ("\\chi"      ?χ)
+    ("\\Psi"      ?Ψ) ("\\psi"      ?ψ)
+    ("\\Omega"    ?Ω) ("\\omega"    ?ω)
+
    )
   ;; use the newly-created math input method
   (set-input-method "math")
