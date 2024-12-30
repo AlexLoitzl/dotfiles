@@ -1,6 +1,8 @@
 # Path to your dotfile directory containing this config file (relative to $HOME).
 dotfiles_dir = "dotfiles"
 
+gpg_user_id = "alexander.loitzl@gmail.com"
+
 [settings]
 posthooks = [ "sway reload" ]
 
@@ -10,6 +12,7 @@ posthooks = [ "sway reload" ]
 # and `target` shall be relative to $HOME directory or absolute.
 sway = { source = "sway/config", target = ".config/sway", vars = "sway/vars.toml" }
 doom = { source = "doom", target = ".config/doom" }
+i3status-rust = { source = "i3status-rust", target = ".config/i3status-rust" }
 alacritty = { source = "alacritty", target = ".config/alacritty" }
 
 [profiles.work.dots]

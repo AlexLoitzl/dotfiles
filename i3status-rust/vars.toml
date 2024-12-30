@@ -1,0 +1,9 @@
+[secrets]
+open_weather_api_key = """hF4DP8ckpJ6Q6FoSAQdA0WVgronKkHsbf3UZEeFZDQoDRGN05J+SAxt+CLj+PCgwt+SjnOZRP37O/aUP+GifsWJoTmnfUMAq6SuSsnmDrc7/KkDBHGNUF2Eldl3PGXjC1GUBCQIQgeb8mU9OWaGLzhqu4ui5m0bsEdw1DlY7AvsJjAAWm1+kNWXId3mJ6aRePeFGv8xqhK1mXIurVReGqjwVUUrp1gMIP+R41DolafESKCz9eVQ1zISLLwP5CN/1OeEY8s4hsA===DSWi"""
+open_weather_city_id = """
+hF4DP8ckpJ6Q6FoSAQdA+x4HQCTa63xJ86xNC3TYXo0y4KAUYEArEx7E4s18IzUw
+M1PXckSX8CB9gvZ9s+fuhtlU8Dsmdix/79OoBLWszrbaPjhRdwjX4uLravfC6Us6
+1EwBCQIQzyyhgl9NHoSa7BDph0JxZaKm1qAoUK77jmcpTz/JnSGjeBOwXsXFot2G
+AWyvSCFdYg0mT9FeGqZwuwqjnQ+ucouKnyeMC+aN
+=HyfT
+"""

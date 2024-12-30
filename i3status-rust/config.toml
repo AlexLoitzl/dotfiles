@@ -1,0 +1,71 @@
+icons_format = "{icon}"
+
+[theme]
+theme = "bad-wolf"
+[theme.overrides]
+idle_bg = "#222222"
+idle_fg = "#f8f8f8"
+info_bg = "#222222"
+info_fg = "#f8f8f2"
+good_bg = "#00FF00"
+good_fg = "#373949"
+warning_bg = "#FFFF00"
+warning_fg = "#373a49"
+critical_bg = "#FF0000"
+critical_fg = "#373a49"
+alternating_tint_bg = "#222222"
+alternating_tint_fg = "#222222"
+separator = "<span font='12.1'></span>"
+
+[icons]
+icons = "awesome4"
+
+[[block]]
+block = "net"
+format = " $icon {$signal_strength $ssid $speed_up/$speed_down|Wired connection} via $device "
+
+[[block]]
+block = "memory"
+format = " $icon $mem_total_used_percents.eng(w:2) "
+format_alt = " $icon_swap $swap_used_percents.eng(w:2) "
+
+[[block]]
+block = "cpu"
+info_cpu = 20
+warning_cpu = 50
+critical_cpu = 90
+
+[[block]]
+block = "load"
+format = " $icon 1min avg: $1m.eng(w:4) "
+interval = 1
+
+[[block]]
+block = "temperature"
+format = " $icon $max max "
+format_alt = " $icon $min min, $max max, $average avg "
+interval = 10
+chip = "*-isa-*"
+
+[[block]]
+block = "sound"
+
+[[block]]
+block = "battery"
+format = " $icon $percentage "
+
+[[block]]
+block = "weather"
+format = " $icon $weather ($location) $temp, $wind m/s $direction "
+format_alt = " $icon_ffin Forecast (9 hour avg) {$temp_favg ({$temp_fmin}-{$temp_fmax})|Unavailable} "
+[block.service]
+name = "openweathermap"
+api_key = ""
+city_id = ""
+units = "metric"
+forecast_hours = 9
+
+[[block]]
+block = "time"
+interval = 5
+format = " $timestamp.datetime(f:'%a %d/%m %R') "
