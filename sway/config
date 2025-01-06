@@ -18,7 +18,7 @@ set $lock "swaylock-fancy-rapid"
 set $slow-lock "swaylock-corruptor"
 
 ### KEYBOARD 
-input * xkb_layout "de"
+input * xkb_layout "{{keyboard.layout}}"
 
 ### OUTPUT 
 #

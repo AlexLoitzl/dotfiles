@@ -1,3 +1,6 @@
+[keyboard]
+layout = "de"
+
 [monitors]
 left = "eDP-1"
 # The position is such that the bottom of the screens align taking scale into account
@@ -5,4 +8,4 @@ left_config = "resolution 1920x1080 position 0,648"
 right_config = "resolution 3840x2160 position 1920,0 scale 1.25"
 additional = ""
 # The last line will get replaced by a script reading some output from swaymsg
-right = "DP-3"
+right = "HDMI-A-1"

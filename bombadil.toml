@@ -4,7 +4,6 @@ dotfiles_dir = "dotfiles"
 gpg_user_id = "alexander.loitzl@gmail.com"
 
 [settings]
-prehooks = [ "$HOME/dotfiles/sway/right-monitor.sh" ]
 posthooks = [ "sway reload" ]
 vars = [ "secrets.toml" ]
 
@@ -16,6 +15,12 @@ sway = { source = "sway", target = ".config/sway", vars = "sway/vars.toml" }
 doom = { source = "doom", target = ".config/doom" }
 i3status-rust = { source = "i3status-rust", target = ".config/i3status-rust" }
 alacritty = { source = "alacritty", target = ".config/alacritty" }
+
+[profiles.home]
+prehooks = [ "$HOME/dotfiles/sway/right-monitor.sh $HOME/dotfiles/sway/vars.toml" ]
+
+[profiles.work]
+prehooks = [ "$HOME/dotfiles/sway/right-monitor.sh $HOME/dotfiles/sway/work-vars.toml" ]
 
 [profiles.work.dots]
 sway = {source ="sway/config", target = ".config/sway", vars = "sway/work-vars.toml"}

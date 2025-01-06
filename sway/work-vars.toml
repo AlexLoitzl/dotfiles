@@ -1,7 +1,12 @@
+[keyboard]
+layout = "us"
+
 [monitors]
-left = "DP-5"
-right = "DP-3"
+left = "eDP-1"
 # The position is such that the bottom of the screens align taking scale into account
-left_config = "resolution 1920x1200 position 0,0"
-right_config = "resolution 1920x1200 position 1920,0"
-additional = "output eDP-1 disable"
+left_config = "resolution 1920x1080 position 0,648"
+right_config = "resolution 3840x2160 position 1920,0 scale 1.25"
+	additional = ""
+	# The last line will get replaced by a script reading some output from swaymsg
+#right = "eDP-1"
+right = "HDMI-A-1"
