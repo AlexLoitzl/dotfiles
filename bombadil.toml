@@ -5,6 +5,7 @@ gpg_user_id = "alexander.loitzl@gmail.com"
 
 [settings]
 posthooks = [ "sway reload" ]
+vars = [ "secrets.toml" ]
 
 # Dotfiles template with their respective `source` template and `target` directories.
 [settings.dots]

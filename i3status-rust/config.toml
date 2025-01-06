@@ -60,8 +60,8 @@ format = " $icon $weather ($location) $temp, $wind m/s $direction "
 format_alt = " $icon_ffin Forecast (9 hour avg) {$temp_favg ({$temp_fmin}-{$temp_fmax})|Unavailable} "
 [block.service]
 name = "openweathermap"
-api_key = ""
-city_id = ""
+api_key = "{{secrets.open_weather_api_key}}"
+city_id = "{{secrets.open_weather_city_id}}"
 units = "metric"
 forecast_hours = 9
 
