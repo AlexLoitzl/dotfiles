@@ -4,6 +4,7 @@ dotfiles_dir = "dotfiles"
 gpg_user_id = "alexander.loitzl@gmail.com"
 
 [settings]
+prehooks = [ "$HOME/dotfiles/sway/right-monitor.sh" ]
 posthooks = [ "sway reload" ]
 vars = [ "secrets.toml" ]
 
