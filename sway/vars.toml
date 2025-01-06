@@ -1,3 +1,6 @@
+[misc]
+launcher = "wmenu_run -N '#222222' -n '#BBBBBB' -S '#FF0000' -s '#EEEEEE' -f 'Fira Code 9'"
+
 [keyboard]
 layout = "de"
 

@@ -11,7 +11,7 @@ set $right l
 set $term alacritty
 
 # Launcher
-set $menu "wmenu-run -N '#222222' -n '#BBBBBB' -S '#FF0000' -s '#EEEEEE' -f 'Fira Code 9'"
+set $menu {{misc.launcher}}
 
 # Screen Lock
 set $lock "swaylock-fancy-rapid"
