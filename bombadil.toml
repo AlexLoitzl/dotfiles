@@ -12,7 +12,7 @@ vars = [ "secrets.toml" ]
 [settings.dots]
 # A dot entry representing a symlink, `source` is relative to `dotfiles_dir`
 # and `target` shall be relative to $HOME directory or absolute.
-sway = { source = "sway/config", target = ".config/sway", vars = "sway/vars.toml" }
+sway = { source = "sway", target = ".config/sway", vars = "sway/vars.toml" }
 doom = { source = "doom", target = ".config/doom" }
 i3status-rust = { source = "i3status-rust", target = ".config/i3status-rust" }
 alacritty = { source = "alacritty", target = ".config/alacritty" }
