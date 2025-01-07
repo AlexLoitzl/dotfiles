@@ -18,7 +18,7 @@ alternating_tint_fg = "#222222"
 separator = "<span font='12.1'></span>"
 
 [icons]
-icons = "awesome4"
+icons = "awesome6"
 
 [[block]]
 block = "net"
