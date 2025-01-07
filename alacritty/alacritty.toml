@@ -1,3 +1,5 @@
 [font]
 normal = {family = "Fira Code", style = "Regular" }
 size = 10
+[terminal]
+shell = "/usr/bin/zsh"
