@@ -15,6 +15,7 @@ sway = { source = "sway", target = ".config/sway", vars = "sway/vars.toml" }
 doom = { source = "doom", target = ".config/doom" }
 i3status-rust = { source = "i3status-rust", target = ".config/i3status-rust" }
 alacritty = { source = "alacritty", target = ".config/alacritty" }
+zshrc = { source = "zsh/zshrc", target = ".zshrc" }
 
 [profiles.home]
 prehooks = [ "$HOME/dotfiles/sway/right-monitor.sh $HOME/dotfiles/sway/vars.toml" ]
