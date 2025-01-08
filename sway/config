@@ -215,8 +215,8 @@ bindsym $mod+r mode "resize"
 
 ## MEDIA BUTTONS
 # Brightness
-bindsym XF86MonBrightnessUp exec brightnessctl set +5
-bindsym XF86MonBrightnessDown exec brightnessctl set 5-
+bindsym XF86MonBrightnessUp exec brightnessctl set +{{brightness.step}}
+bindsym XF86MonBrightnessDown exec brightnessctl set {{brightness.step}}-
 
 bindsym $mod+XF86MonBrightnessDown  exec busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n -500
 bindsym $mod+XF86MonBrightnessUp exec busctl --user set-property rs.wl-gammarelay / rs.wl.gammarelay Brightness d 1.0 && busctl --user set-property rs.wl-gammarelay / rs.wl.gammarelay Temperature q 6500

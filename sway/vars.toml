@@ -4,6 +4,9 @@ launcher = "wmenu_run -N '#222222' -n '#BBBBBB' -S '#FF0000' -s '#EEEEEE' -f 'Fi
 [keyboard]
 layout = "de"
 
+[brightness]
+step = "5"
+
 [monitors]
 left = "eDP-1"
 # The position is such that the bottom of the screens align taking scale into account

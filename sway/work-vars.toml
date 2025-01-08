@@ -4,6 +4,9 @@ launcher = "dmenu_run -nb '#222222' -nf '#BBBBBB' -sb '#FF0000' -sf '#EEEEEE' -f
 [keyboard]
 layout = "us"
 
+[brightness]
+step = "500"
+
 [monitors]
 left = "eDP-1"
 # The position is such that the bottom of the screens align taking scale into account

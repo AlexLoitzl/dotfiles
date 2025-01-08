@@ -106,3 +106,6 @@ compdef _todo todo
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 ############# OPAM ############## 
+
+############# CARGO ############## 
+. "$HOME/.cargo/env"
