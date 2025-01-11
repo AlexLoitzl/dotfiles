@@ -82,7 +82,8 @@ export PATH="$PATH:$HOME/go/bin"
 ############# ALIAS ############# 
 #################################
 alias vim="nvim"
-alias emacs="emacs -b '#21242b'"
+# I don't use emacs in the terminal. I just want it to open Gui
+alias emacs="emacsclient -c &"
 
 #################################
 ############ DANGER ############# 

@@ -30,12 +30,15 @@
 ;; wasn't installed correctly. Font issues are rarely Doom issues!
 ;; (setq doom-font (font-spec :size 12))
 
+;; Ensures Boolean is correctly displayed
 (after! unicode-fonts
   (push "Symbola" (cadr (assoc "Mathematical Alphanumeric Symbols" unicode-fonts-block-font-mapping))))
 
+;; Ensures Iris circles are correctly displayed
 (after! unicode-fonts
   (push "Fira Mono" (cadr (assoc "Geometric Shapes" unicode-fonts-block-font-mapping))))
 
+;; Ensures my emojis are correctly displayed
 (after! unicode-fonts
   (push "Noto Color Emoji" (cadr (assoc "Miscellaneous Symbols and Pictographs" unicode-fonts-block-font-mapping))))
 
@@ -123,5 +126,4 @@
 ;; ****************************************************
 ;; ********************* COQ MODE *********************
 ;; ****************************************************
-
 (load! "+coq.el")

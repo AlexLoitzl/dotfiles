@@ -1,19 +1,13 @@
-;; Emojis
-(add-hook 'coq-mode-hook
-          (lambda ()
-            (setq-local prettify-symbols-alist
-                        '(("Qed." . ?🐣) ("Defined." . ?🐤) ("Admitted." . ?🍗)))))
-
 ;; M-ö, M-ä: Enable Jumping to definitions in evil mode
 (after! coq-mode
   (map! :map coq-mode-map
         "M-ö" #'company-coq-jump-to-definition
         "M-ä" #'pop-global-mark
-		"M-ü" (cmd! (setq proof-three-window-mode-policy 'hybrid) (proof-layout-windows))))
+        "M-ü" (cmd! (setq proof-three-window-mode-policy 'hybrid) (proof-layout-windows))))
 
 ;; set after package doesn't work :(
 ;; Configure when to change layout modes of proof general (1 column vs. 2 columns)
-(setq split-width-threshold 190)
+;; (setq split-width-threshold 190)
 
 ;; ****************************************************
 ;; ********************* IRIS SYM *********************
@@ -132,6 +126,7 @@
 
 (add-hook! coq-mode
   (iris-input-config)
+  ;; Map symbols to other for indentation
   (setq coq-smie-user-tokens
    '(("," . ":=")
      ("∗" . "->")
@@ -153,4 +148,12 @@
      ("by" . "now")
      ("forall" . "now")              ;; NB: this breaks current ∀ indentation.
    ))
+
+  ;; Based on Michael Sammler's comment. 
+  ;; https://mattermost.mpi-sws.org/iris/pl/8w7yujxjwfn9zg7usgj9ctwyhh
+  ;; Relies on script opam-coqtop in PATH which calls coq through opam
+  (setq coq-prog-name "opam-coqtop")
+  
+  (setq-local prettify-symbols-alist
+              '(("Qed." . ?🐣) ("Defined." . ?🐤) ("Admitted." . ?🍗)))
 )
