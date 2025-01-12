@@ -1,8 +1,9 @@
 [misc]
 launcher = "wmenu-run -N '#222222' -n '#BBBBBB' -S '#FF0000' -s '#EEEEEE' -f 'Fira Code 9'"
 
-[keyboard]
-layout = "de"
+[input]
+kb_layout = "de"
+touchpad = "2:/:SynPS/2_Synaptics_TouchPad"
 
 [brightness]
 step = "5"

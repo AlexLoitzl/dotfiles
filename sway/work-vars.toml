@@ -1,8 +1,9 @@
 [misc]
 launcher = "dmenu_run -nb '#222222' -nf '#BBBBBB' -sb '#FF0000' -sf '#EEEEEE' -fn 'FiraCode-9'"
 
-[keyboard]
-layout = "us"
+[input]
+kb_layout = "de"
+touchpad = "2:/:SynPS/2_Synaptics_TouchPad"
 
 [brightness]
 step = "500"

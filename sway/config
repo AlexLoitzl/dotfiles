@@ -18,7 +18,10 @@ set $lock "swaylock-fancy-rapid"
 set $slow-lock "swaylock-corruptor"
 
 ### KEYBOARD 
-input * xkb_layout "{{keyboard.layout}}"
+    input * {
+		xkb_layout "{{input.kb_layout}}"
+		xkb_variant nodeadkeys
+    }
 
 ### OUTPUT 
 #
@@ -43,7 +46,7 @@ font pango:Fira Code Semibold 9
  
 ### Input configuration
 #
-    input "2:7:SynPS/2_Synaptics_TouchPad" {
+    input {{input.touchpad}} {
 #       dwt enabled
 #       tap enabled
         natural_scroll enabled
