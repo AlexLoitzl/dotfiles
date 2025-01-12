@@ -46,7 +46,7 @@ font pango:Fira Code Semibold 9
  
 ### Input configuration
 #
-    input {{input.touchpad}} {
+    input "{{input.touchpad}}" {
 #       dwt enabled
 #       tap enabled
         natural_scroll enabled

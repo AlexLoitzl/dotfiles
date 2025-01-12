@@ -3,7 +3,7 @@ launcher = "wmenu-run -N '#222222' -n '#BBBBBB' -S '#FF0000' -s '#EEEEEE' -f 'Fi
 
 [input]
 kb_layout = "de"
-touchpad = "2:/:SynPS/2_Synaptics_TouchPad"
+touchpad = "2:7:SynPS/2_Synaptics_TouchPad"
 
 [brightness]
 step = "5"
