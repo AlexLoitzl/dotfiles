@@ -1,9 +1,16 @@
 ;; M-ö, M-ä: Enable Jumping to definitions in evil mode
 (after! coq-mode
-  (map! :map coq-mode-map
-        "M-ö" #'company-coq-jump-to-definition
-        "M-ä" #'pop-global-mark
-        "M-ü" (cmd! (setq proof-three-window-mode-policy 'hybrid) (proof-layout-windows))))
+    (map! :map coq-mode-map
+          "M-ö" #'company-coq-jump-to-definition
+          "M-ä" #'pop-global-mark
+          "M-ü" (cmd! (setq proof-three-window-mode-policy 'hybrid) (proof-layout-windows)))
+    (map! :map coq-goals-mode-map
+          "M-ö" #'company-coq-jump-to-definition
+          "M-ä" #'pop-global-mark)
+    (map! :map coq-response-mode-map
+          "M-ö" #'company-coq-jump-to-definition
+          "M-ä" #'pop-global-mark))
+
 
 ;; set after package doesn't work :(
 ;; Configure when to change layout modes of proof general (1 column vs. 2 columns)
@@ -148,6 +155,17 @@
      ("by" . "now")
      ("forall" . "now")              ;; NB: this breaks current ∀ indentation.
    ))
+
+  ;; Avoid additional paren when adding comments
+  ;;   https://github.com/tchajed/dotfiles/blob/master/emacs/doom/%2Bcoq.el
+  (when (modulep! :config default +smartparens)
+    (after! smartparens
+      (sp-with-modes '(coq-mode)
+        (sp-local-pair "(*" "*)")
+        (sp-local-pair "(*" "*"
+                     ;:actions '(insert)
+                     :post-handlers '(("| " "SPC") ("|\n[i]*[d-2]" "RET")))
+  )))
 
   ;; Based on Michael Sammler's comment. 
   ;; https://mattermost.mpi-sws.org/iris/pl/8w7yujxjwfn9zg7usgj9ctwyhh
