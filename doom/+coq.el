@@ -172,7 +172,7 @@
   ;; Relies on script opam-coqtop in PATH which calls coq through opam
   (setq coq-prog-name "opam-coqtop")
   ;; Disable prettify symbols
-  (setq company-coq-disabled-features '(pretify-symbols))
+  (setq company-coq-disabled-features '(prettify-symbols))
   ;; Disable electric indents
   (electric-indent-mode -1)
 
