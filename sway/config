@@ -20,7 +20,7 @@ set $slow-lock "swaylock-corruptor"
 ### KEYBOARD 
     input * {
 		xkb_layout "{{input.kb_layout}}"
-		xkb_variant nodeadkeys
+		{{input.additional}} 
     }
 
 ### OUTPUT 

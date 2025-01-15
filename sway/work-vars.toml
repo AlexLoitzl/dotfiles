@@ -2,8 +2,9 @@
 launcher = "dmenu_run -m $(swaymsg -t get_outputs | jq -r 'map(.focused) | index(true)') -nb '#222222' -nf '#BBBBBB' -sb '#FF0000' -sf '#EEEEEE' -fn 'FiraCode-9'"
 
 [input]
-kb_layout = "de"
+kb_layout = "us"
 touchpad = "2:/:SynPS/2_Synaptics_TouchPad"
+additional = ""
 
 [brightness]
 step = "500"
@@ -13,7 +14,7 @@ left = "eDP-1"
 # The position is such that the bottom of the screens align taking scale into account
 left_config = "resolution 1920x1080 position 0,648"
 right_config = "resolution 1920x1200 position 1920,0 scale 1"
-	additional = ""
-	# The last line will get replaced by a script reading some output from swaymsg
+additional = ""
+# The last line will get replaced by a script reading some output from swaymsg
 #right = "eDP-1"
-right = "DP-7"
+right = "HDMI-A-1"
