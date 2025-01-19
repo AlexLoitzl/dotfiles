@@ -16,6 +16,14 @@
 ;; Configure when to change layout modes of proof general (1 column vs. 2 columns)
 ;; (setq split-width-threshold 190)
 
+;; Disable Company Coq Features (Including prettify-symbols)
+(after! company-coq
+  (add-to-list  'company-coq-disabled-features 'prettify-symbols))
+;; FIXME This needs to come back :(
+;; (setq-local prettify-symbols-alist
+;;             '(("Qed." . ?🐣) ("Defined." . ?🐤) ("Admitted." . ?🍗)))
+
+
 ;; ****************************************************
 ;; ********************* IRIS SYM *********************
 ;; ****************************************************
@@ -171,12 +179,6 @@
   ;; https://mattermost.mpi-sws.org/iris/pl/8w7yujxjwfn9zg7usgj9ctwyhh
   ;; Relies on script opam-coqtop in PATH which calls coq through opam
   (setq coq-prog-name "opam-coqtop")
-  ;; Disable prettify symbols
-  (setq company-coq-disabled-features '(prettify-symbols))
   ;; Disable electric indents
   (electric-indent-mode -1)
-
-  ;; FIXME This needs to come back :(
-  ;; (setq-local prettify-symbols-alist
-  ;;             '(("Qed." . ?🐣) ("Defined." . ?🐤) ("Admitted." . ?🍗)))
 )
