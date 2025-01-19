@@ -19,10 +19,6 @@
 ;; Disable Company Coq Features (Including prettify-symbols)
 (after! company-coq
   (add-to-list  'company-coq-disabled-features 'prettify-symbols))
-;; FIXME This needs to come back :(
-;; (setq-local prettify-symbols-alist
-;;             '(("Qed." . ?🐣) ("Defined." . ?🐤) ("Admitted." . ?🍗)))
-
 
 ;; ****************************************************
 ;; ********************* IRIS SYM *********************
@@ -175,7 +171,13 @@
                      :post-handlers '(("| " "SPC") ("|\n[i]*[d-2]" "RET")))
   )))
 
-  ;; Based on Michael Sammler's comment. 
+
+  ;; Overwriteing Proof Generals prettification list
+  (setq-local prettify-symbols-alist
+            '(("Qed." . ?🐣) ("Defined." . ?🐤) ("Admitted." . ?🍗)))
+  (prettify-symbols-mode)
+
+  ;; Based on Michael Sammler's comment.
   ;; https://mattermost.mpi-sws.org/iris/pl/8w7yujxjwfn9zg7usgj9ctwyhh
   ;; Relies on script opam-coqtop in PATH which calls coq through opam
   (setq coq-prog-name "opam-coqtop")
