@@ -16,6 +16,14 @@
 ;; Configure when to change layout modes of proof general (1 column vs. 2 columns)
 ;; (setq split-width-threshold 190)
 
+;; Change the major mode symbol for Coq (using delight)
+(use-package! delight
+  :config
+  (delight 'coq-mode "🐓" :major)
+  (delight 'coq-goals-mode "🐓 Goals" :major)
+  (delight 'coq-response-mode "🐓 Response" :major)
+)
+;;)
 ;; Disable Company Coq Features (Including prettify-symbols)
 (after! company-coq
   (add-to-list  'company-coq-disabled-features 'prettify-symbols))

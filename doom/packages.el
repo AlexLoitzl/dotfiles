@@ -53,3 +53,5 @@
   (:host github
    :repo "leanprover/lean4-mode"
    :files ("*.el" "data")))
+
+(package! delight)
