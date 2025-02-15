@@ -1,16 +1,48 @@
-;; M-ö, M-ä: Enable Jumping to definitions in evil mode
-(after! coq-mode
-    (map! :map coq-mode-map
-          "M-ö" #'company-coq-jump-to-definition
-          "M-ä" #'pop-global-mark
-          "M-ü" (cmd! (setq proof-three-window-mode-policy 'hybrid) (proof-layout-windows)))
-    (map! :map coq-goals-mode-map
-          "M-ö" #'company-coq-jump-to-definition
-          "M-ä" #'pop-global-mark)
-    (map! :map coq-response-mode-map
-          "M-ö" #'company-coq-jump-to-definition
-          "M-ä" #'pop-global-mark))
-
+;; This is mostly copied from the coq module definition
+;; Better not remove any bindings in order to keep all in one place
+(map! :after coq-mode
+      :map (coq-mode-map coq-goals-mode-map coq-response-mode-map)
+      :localleader
+      "n" #'proof-assert-next-command-interactive
+      "u" #'proof-undo-last-successful-command
+      "RET" #'proof-goto-point
+      "." #'company-coq-jump-to-definition
+      "x" #'proof-shell-exit
+      (:prefix ("l" . "layout")
+        "c" #'pg-response-clear-displays
+        "l" #'proof-layout-windows
+        "p" #'proof-prf)
+      (:prefix ("p" . "proof")
+        "i" #'proof-interrupt-process
+        "p" #'proof-process-buffer
+        "q" #'proof-shell-exit
+        "r" #'proof-retract-buffer)
+      (:prefix ("a" . "about/print/check")
+        "p" #'coq-Print
+        "P" #'coq-Print-with-all
+        "b" #'coq-About
+        "B" #'coq-About-with-all
+        "c" #'coq-Check
+        "C" #'coq-Check-show-all
+        "c" #'coq-show
+        "a" #'coq-Search
+        "f" #'proof-find-theorems
+        (:prefix ("i" . "implicits")
+          "b" #'coq-About-with-implicits
+          "c" #'coq-Check-show-implicits
+          "i" #'coq-Print-with-implicits))
+      (:prefix ("g" . "goto")
+        "e" #'proof-goto-command-end
+        "l" #'proof-goto-end-of-locked
+        "s" #'proof-goto-command-start)
+      (:prefix ("i" . "insert")
+        "c" #'coq-insert-command
+        "e" #'coq-end-Section
+        "i" #'coq-insert-intros
+        "r" #'coq-insert-requires
+        "s" #'coq-insert-section-or-module
+        "t" #'coq-insert-tactic
+        "T" #'coq-insert-tactical))
 
 ;; set after package doesn't work :(
 ;; Configure when to change layout modes of proof general (1 column vs. 2 columns)
