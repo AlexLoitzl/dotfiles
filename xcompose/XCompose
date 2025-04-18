@@ -1,1 +1,42 @@
 include "%L"
+
+# German Stuff
+<Multi_key> <a> <a>	: "ä"	# Umlaut a
+<Multi_key> <o> <o>	: "ö"	# Umlaut o
+<Multi_key> <u> <u>	: "ü"	# Umlaut u
+<Multi_key> <A> <A>	: "Ä"	# Umlaut A
+<Multi_key> <O> <O>	: "Ö"	# Umlaut O
+<Multi_key> <U> <U>	: "Ü"	# Umlaut U
+<Multi_key> <s> <s>	: "ß"	U03B1 # Esszet
+
+# Greek Letters
+<Multi_key> <g> <a>		: "α"	U03B1		# GREEK SMALL LETTER ALPHA
+<Multi_key> <g> <b>		: "β"	U03B2		# GREEK SMALL LETTER BETA
+<Multi_key> <g> <d>		: "δ"	U03B4		# GREEK SMALL LETTER DELTA
+<Multi_key> <g> <e>		: "ε"	U03B5		# GREEK SMALL LETTER EPSILON
+<Multi_key> <g> <f>		: "φ"	U03C6		# GREEK SMALL LETTER PHI
+<Multi_key> <g> <g>		: "γ"	U03B3		# GREEK SMALL LETTER GAMMA
+<Multi_key> <g> <k>		: "κ"	U03BA		# GREEK SMALL LETTER KAPPA
+<Multi_key> <g> <l>		: "λ"	U03BB		# GREEK SMALL LETTER LAMBDA
+<Multi_key> <g> <m>		: "μ"	U03BC		# GREEK SMALL LETTER MU
+<Multi_key> <g> <n>		: "ν"	U03BD		# GREEK SMALL LETTER NU
+<Multi_key> <g> <o>		: "ω"	U03C9		# GREEK SMALL LETTER OMEGA
+<Multi_key> <g> <p>		: "π"	U03C0		# GREEK SMALL LETTER PI
+<Multi_key> <g> <s>		: "σ"	U03C3		# GREEK SMALL LETTER SIGMA
+<Multi_key> <g> <t>		: "τ"	U03C4		# GREEK SMALL LETTER TAU
+
+# Capital greek letters.
+<Multi_key> <g> <A>		: "Α"	U0391		# GREEK CAPITAL LETTER ALPHA
+<Multi_key> <g> <B>		: "Β"	U0392		# GREEK CAPITAL LETTER BETA
+<Multi_key> <g> <D>		: "Δ"	U0394		# GREEK CAPITAL LETTER DELTA
+<Multi_key> <g> <E>		: "Ε"	U0395		# GREEK CAPITAL LETTER EPSILON
+<Multi_key> <g> <F>		: "Φ"	U03A6		# GREEK CAPITAL LETTER PHI
+<Multi_key> <g> <G>		: "Γ"	U0393		# GREEK CAPITAL LETTER GAMMA
+<Multi_key> <g> <K>		: "Κ"	U039A		# GREEK CAPITAL LETTER KAPPA
+<Multi_key> <g> <L>		: "Λ"	U039B		# GREEK CAPITAL LETTER LAMBDA
+<Multi_key> <g> <M>		: "Μ"	U039C		# GREEK CAPITAL LETTER MU
+<Multi_key> <g> <N>		: "Ν"	U039D		# GREEK CAPITAL LETTER NU
+<Multi_key> <g> <O>		: "Ω"	U039F		# GREEK CAPITAL LETTER OMICRON
+<Multi_key> <g> <P>		: "Π"	U03A0		# GREEK CAPITAL LETTER PI
+<Multi_key> <g> <S>		: "Σ"	U03A3		# GREEK CAPITAL LETTER SIGMA
+<Multi_key> <g> <T>		: "Τ"	U03A4		# GREEK CAPITAL LETTER TAU
