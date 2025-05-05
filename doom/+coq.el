@@ -227,3 +227,6 @@
   ;; Disable electric indents
   (electric-indent-mode -1)
 )
+
+;; Add column indicator
+(add-hook! coq-mode #'display-fill-column-indicator-mode)
