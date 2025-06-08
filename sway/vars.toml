@@ -2,9 +2,9 @@
 launcher = "wmenu-run -N '#222222' -n '#BBBBBB' -S '#FF0000' -s '#EEEEEE' -f 'Fira Code 9'"
 
 [input]
-kb_layout = "de"
+kb_layout = "us"
 touchpad = "2:7:SynPS/2_Synaptics_TouchPad"
-additional = "xkb_variant nodeadkeys \n xkb_options compose:lalt"
+additional = "xkb_options compose:ralt"
 
 [brightness]
 step = "5"

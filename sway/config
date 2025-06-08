@@ -1,3 +1,6 @@
+### This is a dangerous command. Put it at top so that user config overwrites system.
+include /etc/sway/config.d/*
+
 ### VARIABLES
 #
 # Logo key. Use Mod1 for Alt.
@@ -263,7 +266,7 @@ bar {
       binding_mode       '#2F343A' '#900000' '#FFFFFF'
     }
 }
-include /etc/sway/config.d/*
+
 
 ### STARTUP
 exec swaync
