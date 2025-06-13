@@ -224,6 +224,9 @@
   ;; https://mattermost.mpi-sws.org/iris/pl/8w7yujxjwfn9zg7usgj9ctwyhh
   ;; Relies on script opam-coqtop in PATH which calls coq through opam
   (setq coq-prog-name "opam-coqtop")
+
+  ;; Skip proofs
+  (setq proof-omit-proofs-option t)
   ;; Disable electric indents
   (electric-indent-mode -1)
 )

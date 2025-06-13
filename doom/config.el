@@ -30,6 +30,10 @@
 ;; wasn't installed correctly. Font issues are rarely Doom issues!
 ;; (setq doom-font (font-spec :size 12))
 
+;; A bit hacky at the moment TODO
+;; Set s.t. 80 char are exactly half on my notebook
+(setq doom-big-font (font-spec :family "DejaVu SansMono" :size 18))
+
 ;; Ensures Boolean is correctly displayed
 (after! unicode-fonts
   (push "Symbola" (cadr (assoc "Mathematical Alphanumeric Symbols" unicode-fonts-block-font-mapping))))
