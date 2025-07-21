@@ -28,11 +28,10 @@
 ;; up, `M-x eval-region' to execute elisp code, and 'M-x doom/reload-font' to
 ;; refresh your font settings. If Emacs still can't find your font, it likely
 ;; wasn't installed correctly. Font issues are rarely Doom issues!
-(setq doom-font (font-spec :size 13))
 
-;; A bit hacky at the moment TODO
-;; Set s.t. 80 char are exactly half on my notebook
-(setq doom-big-font (font-spec :family "DejaVu SansMono" :size 18))
+(setq doom-font (font-spec :family "DejaVu Sans Mono" :size 13 :weight 'semi-light)
+      ;; Set s.t. 80 char are exactly half on my notebook
+      doom-big-font (font-spec :family "DejaVu Sans Mono" :size 18))
 
 ;; Ensures Boolean is correctly displayed
 (after! unicode-fonts
