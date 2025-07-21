@@ -28,7 +28,7 @@
 ;; up, `M-x eval-region' to execute elisp code, and 'M-x doom/reload-font' to
 ;; refresh your font settings. If Emacs still can't find your font, it likely
 ;; wasn't installed correctly. Font issues are rarely Doom issues!
-;; (setq doom-font (font-spec :size 12))
+(setq doom-font (font-spec :size 13))
 
 ;; A bit hacky at the moment TODO
 ;; Set s.t. 80 char are exactly half on my notebook
@@ -95,6 +95,10 @@
 ;; ****************************************************
 ;; ********************** STUFF ***********************
 ;; ****************************************************
+
+;; Add jk escape sequence jk
+(after! evil-escape
+  (setq evil-escape-key-sequence "jk"))
 
 ;; Prevent triggering Company autocompletion with Enter
 ;; Based on: https://www.reddit.com/r/DoomEmacs/comments/tm3315/hello_i_just_installed_doom_emacs_by_default_the/

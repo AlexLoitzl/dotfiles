@@ -223,13 +223,27 @@
   ;; Based on Michael Sammler's comment.
   ;; https://mattermost.mpi-sws.org/iris/pl/8w7yujxjwfn9zg7usgj9ctwyhh
   ;; Relies on script opam-coqtop in PATH which calls coq through opam
-  (setq coq-prog-name "opam-coqtop")
+  ;; DEPRECATED : See solution below
+  ;; (setq coq-prog-name "opam-coqtop")
 
   ;; Skip proofs
   (setq proof-omit-proofs-option t)
   ;; Disable electric indents
   (electric-indent-mode -1)
 )
+
+;; Based on Michael Sammler's comment.
+;; https://github.com/ProofGeneral/PG/issues/819
+;; Relies on script opam-coqtop in PATH which calls coq through opam
+(add-hook! 'proof-shell-before-process-hook
+  (setq proof-prog-name "opam-coqtop")
+  (setq coq-compiler (coq-detect-coqc))
+  (setq coq-dependency-analyzer (coq-detect-coqdep))
+  (setq coq-prog-name proof-prog-name)
+  (setq coq-prog-args (coq-prog-args))
+    ; 99 causes this hook to run very late, in particular after
+    ; the hook from proof-general that sets these variables
+    99)
 
 ;; Add column indicator
 (add-hook! coq-mode #'display-fill-column-indicator-mode)
