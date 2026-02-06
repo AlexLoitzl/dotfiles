@@ -9,7 +9,7 @@ sed -i '$ d' $CONFIG
 
 # If the display is the laptop's monitor, use some dummy instead
 if [ "$DISPLAY" = "eDP-1" ]; then
-  echo "right = \"HDMI-A-1\"" >> $CONFIG 
+  echo "right = \"DVI-I-1\"" >> $CONFIG 
 else
   echo "right = \"$DISPLAY\"" >> $CONFIG 
 fi
