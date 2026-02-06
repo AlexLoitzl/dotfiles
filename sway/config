@@ -267,8 +267,6 @@ bar {
     }
 }
 
-# Dirty hack to prevent evince from printing on Ctrl+p
-for_window [app_id="org.gnome.Evince"] bindsym Ctrl+p nop
 ### STARTUP
 exec swaync
 exec wl-gammarelay-rs
