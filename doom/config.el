@@ -29,7 +29,7 @@
 ;; refresh your font settings. If Emacs still can't find your font, it likely
 ;; wasn't installed correctly. Font issues are rarely Doom issues!
 
-(setq doom-font (font-spec :family "DejaVu Sans Mono" :size 13 :weight 'semi-light)
+(setq doom-font (font-spec :family "DejaVu Sans Mono" :size 13)
       ;; Set s.t. 80 char are exactly half on my notebook
       doom-big-font (font-spec :family "DejaVu Sans Mono" :size 18))
 
@@ -127,7 +127,10 @@
 ;; ******************** LATEX MODE ********************
 ;; ****************************************************
 (after! tex
-  (add-hook! TeX-mode 'hl-todo-mode))
+  (add-hook! TeX-mode 'hl-todo-mode)
+  (add-hook! TeX-mode (setq LaTeX-indent-level 2))
+  (add-hook! TeX-mode (setq LaTeX-item-indent 0))
+  )
 
 
 ;; ****************************************************

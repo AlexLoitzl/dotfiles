@@ -16,6 +16,7 @@ include "%L"
 <Multi_key> <g> <e>		: "ε"	U03B5		# GREEK SMALL LETTER EPSILON
 <Multi_key> <g> <f>		: "φ"	U03C6		# GREEK SMALL LETTER PHI
 <Multi_key> <g> <g>		: "γ"	U03B3		# GREEK SMALL LETTER GAMMA
+<Multi_key> <g> <i>		: "ψ"	U03C8		# GREEK SMALL LETTER PSI
 <Multi_key> <g> <k>		: "κ"	U03BA		# GREEK SMALL LETTER KAPPA
 <Multi_key> <g> <l>		: "λ"	U03BB		# GREEK SMALL LETTER LAMBDA
 <Multi_key> <g> <m>		: "μ"	U03BC		# GREEK SMALL LETTER MU
@@ -32,6 +33,7 @@ include "%L"
 <Multi_key> <g> <E>		: "Ε"	U0395		# GREEK CAPITAL LETTER EPSILON
 <Multi_key> <g> <F>		: "Φ"	U03A6		# GREEK CAPITAL LETTER PHI
 <Multi_key> <g> <G>		: "Γ"	U0393		# GREEK CAPITAL LETTER GAMMA
+<Multi_key> <g> <I>		: "Ψ"	U03A8		# GREEK CAPITAL LETTER PSI
 <Multi_key> <g> <K>		: "Κ"	U039A		# GREEK CAPITAL LETTER KAPPA
 <Multi_key> <g> <L>		: "Λ"	U039B		# GREEK CAPITAL LETTER LAMBDA
 <Multi_key> <g> <M>		: "Μ"	U039C		# GREEK CAPITAL LETTER MU
@@ -40,3 +42,6 @@ include "%L"
 <Multi_key> <g> <P>		: "Π"	U03A0		# GREEK CAPITAL LETTER PI
 <Multi_key> <g> <S>		: "Σ"	U03A3		# GREEK CAPITAL LETTER SIGMA
 <Multi_key> <g> <T>		: "Τ"	U03A4		# GREEK CAPITAL LETTER TAU
+
+# Mathematical Symbols 
+# Mostly trying latex encoding
