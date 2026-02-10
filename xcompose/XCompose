@@ -1,5 +1,9 @@
 include "%L"
 
+# Issues identified with applications:
+# - Firefox: Doesn't take double Multi Key
+# - Alacritty: Doesn't handle overlapping
+
 # German Stuff
 <Multi_key> <a> <a>	: "ä"	# Umlaut a
 <Multi_key> <o> <o>	: "ö"	# Umlaut o
@@ -63,7 +67,6 @@ include "%L"
 
 
 # Arrows
-
 <Multi_key> <a> <m> <t> : "↦"   U21A6           # MAPSTO
 <Multi_key> <a> <l>		: "←"	leftarrow	    # LEFTWARDS ARROW
 <Multi_key> <a> <u>		: "↑"	uparrow		    # UPWARDS ARROW
@@ -110,21 +113,14 @@ include "%L"
 <Multi_key> <3> <s> <q>			: "∛"	U221B	        # CUBE ROOT
 <Multi_key> <4> <s> <q>			: "∜"	U221C		# FOURTH ROOT
 
-<Multi_key> <slash> <backslash>         : "∧"  U2227           # LOGICAL AND
-<Multi_key> <backslash> <slash>         : "∨"  U2228           # LOGICAL OR
-<Multi_key> <n> <e>	<g>     :	"¬"	U00AC 		# NOT SIGN
-
 <Multi_key> <O> <slash>                 : "∅"   U2205           # EMPTY SET (thanks jsled!)
 <Multi_key> <slash> <O>                 : "∅"   U2205           # EMPTY SET
 
 # Binary Operations
-<Multi_key> <Multi_key> <o>              : "∘"   U2218           # RING OPERATOR (function composition)
-<Multi_key> <Multi_key> <x>             : "⨯"   U2A2F           # CROSS PRODUCT
-<Multi_key> <Multi_key> <period>        : "⋅"   U22C5           # DOT OPERATOR (dot product)
-## I repeat this for sets just in case
-<Multi_key> <Multi_key> <u> 	: "∪"	U222A		# UNION
-<Multi_key> <Multi_key> <i>     : "∩"	U2229		# INTERSECTION
-<Multi_key> <Multi_key> <plus>  : "⊕"  U2295    # CIRCLED PLUS
+<Multi_key> <c> <i> <r>           : "∘"   U2218           # RING OPERATOR (function composition)
+<Multi_key> <t> <i> <m>             : "⨯"   U2A2F           # CROSS PRODUCT
+<Multi_key> <c> <d> <o> <t>        : "⋅"   U22C5           # DOT OPERATOR (dot product)
+<Multi_key> <o> <p> <l>  : "⊕"  U2295    # CIRCLED PLUS
 
 
 ## Sets
@@ -138,20 +134,38 @@ include "%L"
 <Multi_key> <braceleft> <backslach> <slash>     : "∩"	U2229		# INTERSECTION
 
 ## Logic
-<Multi_key> <E> <E>                     : "∃"  U2203           # THERE EXISTS
+<Multi_key> <l> <E>                     : "∃"  U2203           # THERE EXISTS
 <Multi_key> <slash> <E> <E>             : "∄"   U2204           # THERE DOES NOT EXIST
-<Multi_key> <A> <A>                     : "∀"  U2200           # FOR ALL
+<Multi_key> <l> <A>                     : "∀"  U2200           # FOR ALL
 <Multi_key> <8> <8>                     : "∞"  U221E           # INFINITY
 <Multi_key> <e> <n> <t> :	"⊢"	 U22A2	# RIGHT TACK
 <Multi_key> <t> <n> <e> :	"⊣"	 U22A3	# LEFT TACK
-<Multi_key> <l> <t> :	"⊥"	 U22A5	# UP TACK (bottom) or should we use U27C2 PERPENDICULAR?
-<Multi_key> <l> <f> <underscore>:	"⊤"	 U22A4	# DOWN TACK (opposite of False)
+<Multi_key> <f> <a> <l>:	"⊥"	 U22A5	# UP TACK (bottom) or should we use U27C2 PERPENDICULAR?
+<Multi_key> <t> <r> <u>:	"⊤"	 U22A4	# DOWN TACK (opposite of False)
+<Multi_key> <slash> <backslash>         : "∧"  U2227           # LOGICAL AND
+<Multi_key> <backslash> <slash>         : "∨"  U2228           # LOGICAL OR
+<Multi_key> <l> <a> <n> <d>         : "∧"  U2227           # LOGICAL AND
+<Multi_key> <l> <o> <r>         : "∨"  U2228           # LOGICAL OR
+<Multi_key> <n> <e>	<g>     :	"¬"	U00AC 		# NOT SIGN
+<Multi_key> <i> <f> <f>	: "↔"	U2194           # LEFT RIGHT ARROW (kragen's)
 
-## Separation Logic
+
+
+
+## Iris - This is highly dangerous as I am trying to keep these short
 <Multi_key> <asterisk> : "∗"   U2217 # ASTERISK OPERATOR
-
-<Multi_key> <m> <u>                : "µ"   U00B5      # MICRO SIGN
-<Multi_key> <l> <l>		: "ℓ" U2113	# SCRIPT SMALL L
+<Multi_key> <l> <t> <r>             : "▷"   U25B7           # LATER
+<Multi_key> <r> <l> <t> <r>         : "◁"   U25C1           # TRIANGLE LEFT
+<Multi_key> <b> <o> <x> : "□"   U25A1           # WHITE SQUARE
+<Multi_key> <l> <c>                : "⌜"	U231C		    # TOP LEFT CORNER
+<Multi_key> <r> <c>              : "⌝"	U231D		    # TOP RIGHT CORNER
+<Multi_key> <e> <0>              : "◇"	U25C7		    # Except Zero
+<Multi_key> <t> <o>              : "→"	U2192		    # To
+<Multi_key> <i> <a> <a>          : "●"	U25CF		    # Authoratative full
+<Multi_key> <i> <a> <f>          : "◯"	U25EF		    # Authoratative fragment
+<Multi_key> <i> <l> <t>          : "⤳"	U2933		    # Leads To
+<Multi_key> <?> <?>           : "¿"	UBF		    # Leads To
+<Multi_key> <!> <!>           : "¡"	UA1		    # Leads To
 
 ## Braces
 <Multi_key> <braceleft>	<bar> : "⦃" U2983	# LEFT WHITE CURLY BRACKET
@@ -172,8 +186,6 @@ include "%L"
 <Multi_key> <bracketleft> <equal> <less>       : "⊑"   U2291           # SQUARE IMAGE OF OR EQUAL TO
 <Multi_key> <bracketright> <greater>: "⊐"  U2290           # SQUARE ORIGINAL OF
 <Multi_key> <bracketright> <equal> <greater>      : "⊒"   U2292           # SQUARE ORIGINAL OF OR EQUAL TO
-<Multi_key> <underscore> <bar> <underscore>:	"⊥"	 U22A5	# UP TACK (bottom) or should we use U27C2 PERPENDICULAR?
-<Multi_key> <minus> <bar> <minus>:	"⊤"	 U22A4	# DOWN TACK (opposite of False)
 
 # Subscripts
 <Multi_key> <underscore> <0>  	       : "₀"  U2080   	  # SUBSCRIPT ZERO
