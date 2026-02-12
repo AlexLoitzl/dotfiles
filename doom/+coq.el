@@ -181,7 +181,7 @@
 ;; )
 
 (add-hook! coq-mode
-  (iris-input-config)
+  ;;(iris-input-config)
   ;; Map symbols to other for indentation
   (setq coq-smie-user-tokens
    '(("," . ":=")
