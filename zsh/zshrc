@@ -3,6 +3,8 @@
 ################################
 
 ############# SSH ##############
+keychain -q $HOME/.ssh/id_ed25519
+source $HOME/.keychain/lenovore-sh
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -103,10 +105,23 @@ _todo()
 }
 compdef _todo todo
 
+# Another todo for work
+alias tdw="todo.sh -d $HOME/.config/todo/work/todo.cfg"
+_tdw()
+{
+    alias tdw.sh='todo.sh -d $HOME/.config/todo/work/todo.cfg'
+    # This is needed to make aliases work in a non-interactive shell,
+    # see https://stackoverflow.com/questions/23258413/expand-aliases-in-non-interactive-shells
+    setopt ALIASES
+    _todo.sh "$@"
+}
+compdef _tdw tdw
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-############# OPAM ############## 
+############# CARGO ##############
+#. "$HOME/.cargo/env"
 
-############# CARGO ############## 
-. "$HOME/.cargo/env"
+############# OPAM ############## 
+#[[ ! -r '/home/alex/.opam/opam-init/init.zsh' ]] || source '/home/alex/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
