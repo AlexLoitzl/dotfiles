@@ -150,7 +150,9 @@ include "%L"
 <Multi_key> <i> <f> <f>	: "↔"	U2194           # LEFT RIGHT ARROW (kragen's)
 
 
-
+## Math Letters
+<Multi_key> <m> <n> : "ℕ"   U2115 # Natural Numbers
+<Multi_key> <m> <b> : "𝔹"   U1D539 # Boolean
 
 ## Iris - This is highly dangerous as I am trying to keep these short
 <Multi_key> <asterisk> : "∗"   U2217 # ASTERISK OPERATOR
