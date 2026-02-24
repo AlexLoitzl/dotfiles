@@ -67,7 +67,10 @@ include "%L"
 
 
 # Arrows
-<Multi_key> <a> <m> <t> : "↦"   U21A6           # MAPSTO
+<Multi_key> <a> <m> <t> : "↦"   U21A6       # LOWERCASE MAPSTO
+<Multi_key> <a> <M> <t> : "⤇"   U2907      # UPERCASE MAPSTO
+<Multi_key> <a> <M> <f> : "⤆"   U2906      # UPPERCASE MAPSFROM
+
 <Multi_key> <a> <l>		: "←"	leftarrow	    # LEFTWARDS ARROW
 <Multi_key> <a> <u>		: "↑"	uparrow		    # UPWARDS ARROW
 <Multi_key> <a> <r>		: "→"	rightarrow	    # RIGHTWARDS ARROW
@@ -98,7 +101,8 @@ include "%L"
 <Multi_key> <n> <i>			: "∋"	U220B		# CONTAINS AS MEMBER  (I hope this doesn't conflict)
 <Multi_key> <slash> <n> <i>		: "∌"	U220C		# DOES NOT CONTAIN AS MEMBER
 
-<Multi_key> <asciitilde> <equal>			: "≅"	U2245		# APPROXIMATELY EQUAL TO (It actually means "congruent"!)
+<Multi_key> <asciitilde> <equal>			: "≅"	U2245		# CONGRUENCE
+<Multi_key> <asciitilde> <ascitilde>			: "≅"	U2248		# APPROXIMATELY EQUAL 
 <Multi_key> <equal> <equal>		: "≡"	U2261		# IDENTICAL TO
 <Multi_key> <colon> <equal> 		: "≔"  U2254		# COLON EQUALS
 <Multi_key> <equal> <colon> 		: "≕"  U2255		# EQUALS COLON
