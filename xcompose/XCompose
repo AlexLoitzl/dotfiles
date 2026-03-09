@@ -84,6 +84,10 @@ include "%L"
 <Multi_key> <a> <B> <H>	                     : "⇔"	U21D4	# LEFT RIGHT DOUBLE ARROW
 <Multi_key> <a> <B> <V>	                     : "⇕"	U21D5	# UP DOWN DOUBLE ARROW
 
+<Multi_key> <a> <h> <l>                      : "↩"	U21A9		# LEFTWARDS HOOKED ARROW
+<Multi_key> <a> <h> <r>                      : "↪"	U21AA		# RIGHTWARDS HOOKED ARROW
+
+
 
 
 # Mathematical Symbols 
@@ -133,8 +137,8 @@ include "%L"
 <Multi_key> <braceleft> <slash> <less>       : "⊄" U2284        # NOT A SUBSET OF
 <Multi_key> <braceleft>	<greater>	         : "⊃"	U2283		# SUPERSET OF
 <Multi_key> <braceleft> <equal> <greater>    : "⊇" U2287	# SUPERSET OF OR EQUAL TO
-<Multi_key> <braceleft> <slash> <backslash>  : "∪"	U222A		# UNION
-<Multi_key> <braceleft> <backslach> <slash>  : "∩"	U2229		# INTERSECTION
+<Multi_key> <braceleft> <backslash> <slash>  : "∪"	U222A		# UNION
+<Multi_key> <braceleft> <slash> <backslash>  : "∩"	U2229		# INTERSECTION
 
 ## Logic
 <Multi_key> <l> <E>                          : "∃"  U2203           # THERE EXISTS
@@ -143,8 +147,10 @@ include "%L"
 <Multi_key> <8> <8>                          : "∞"  U221E           # INFINITY
 <Multi_key> <e> <n> <t>                      :	"⊢"	 U22A2	# RIGHT TACK
 <Multi_key> <t> <n> <e>                      :	"⊣"	 U22A3	# LEFT TACK
-<Multi_key> <f> <a> <l>                      :	"⊥"	 U22A5	# UP TACK (bottom) or should we use U27C2 PERPENDICULAR?
+<Multi_key> <f> <a> <l>                      :	"⊥"	 U22A5	# DOUBLE UP TACK (bottom)
+<Multi_key> <f> <f> <a> <l>                  :	"⫫"	 U2AEB	# UP TACK (bottom) or should we use U27C2 PERPENDICULAR?
 <Multi_key> <t> <r> <u>                      :	"⊤"	 U22A4	# DOWN TACK (opposite of False)
+<Multi_key> <t> <t> <r> <u>                  :	"⫪"	 U2AEA	# DOUBLE  DOWN TACK 
 <Multi_key> <slash> <backslash>              : "∧"  U2227           # LOGICAL AND
 <Multi_key> <backslash> <slash>              : "∨"  U2228           # LOGICAL OR
 <Multi_key> <l> <a> <n> <d>                  : "∧"  U2227           # LOGICAL AND
