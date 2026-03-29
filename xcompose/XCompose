@@ -11,7 +11,9 @@ include "%L"
 <Multi_key> <A> <A>	                         : "Ä"	# Umlaut A
 <Multi_key> <O> <O>	                         : "Ö"	# Umlaut O
 <Multi_key> <U> <U>	                         : "Ü"	# Umlaut U
-<Multi_key> <s> <s>	                         : "ß"	U03B1 # Esszet
+<Multi_key> <s> <s>	                         : "ß"	U03B1 # ESSZET
+<Multi_key> <e> <u> 	                         : "€"	U20A0 # EURO
+
 
 # Greek Letters
 <Multi_key> <g> <a>		                     : "α"	U03B1		# GREEK SMALL LETTER ALPHA
@@ -38,6 +40,7 @@ include "%L"
 <Multi_key> <g> <c>		                     : "χ"	U03C6		# GREEK SMALL LETTER CHI
 <Multi_key> <g> <y>		                     : "ψ"	U03C8		# GREEK SMALL LETTER PSI
 <Multi_key> <g> <w>		                     : "ω"	U03C9		# GREEK SMALL LETTER OMEGA
+<Multi_key> <g> <v> <s>		                 : "ς"	U03C2		# GREEK SMALL LETTER FINAL SIGMA (VARSIGMA)
 
 # Capital greek letters.
 <Multi_key> <g> <A>		                     : "Α"	U0391		# GREEK CAPITAL LETTER ALPHA
@@ -98,6 +101,8 @@ include "%L"
 
 <Multi_key> <less> <less>        	         : "≪"	U226A		# MUCH LESS-THAN
 <Multi_key> <greater> <greater> 		     : "≫"	U226B		# MUCH GREATER-THAN
+
+<Multi_key> <p> <r>	<e> <c>	                 : "⋞"	U22DE		# PRECEQ
 
 <Multi_key> <i> <n>			                 : "∈"	U2208		# ELEMENT OF
 <Multi_key> <slash> <i> <n>                  : "∉"	U2209		# NOT AN ELEMENT OF (I have ∈ on my keyboard...)
