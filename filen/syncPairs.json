@@ -1,0 +1,12 @@
+[
+	{
+		"local": "/home/alex/Pictures/",
+		"remote": "/Pictures",
+		"syncMode": "localToCloud"
+	},
+    {
+		"local": "/home/alex/Documents/studium",
+		"remote": "/Studium",
+		"syncMode": "localToCloud"
+	}
+]
