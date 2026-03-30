@@ -8,5 +8,10 @@
 		"local": "/home/alex/Documents/studium",
 		"remote": "/Studium",
 		"syncMode": "localToCloud"
+	},
+    {
+		"local": "/home/alex/Music",
+		"remote": "/Music",
+		"syncMode": "localToCloud"
 	}
 ]
