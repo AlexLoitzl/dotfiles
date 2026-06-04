@@ -155,6 +155,7 @@ font pango:Fira Code Semibold 9
 	bindsym Alt+Print exec "$HOME/.local/bin/screenshot 1"
 	# Selected Area 
 	bindsym Shift+Print exec "$HOME/.local/bin/screenshot 2"
+	bindsym $mod+Shift+s exec "$HOME/.local/bin/screenshot 2"
 
 #
 # Layout stuff:
