@@ -179,7 +179,6 @@
 ;;   ;; use the newly-created math input method
 ;;   (set-input-method "math")
 ;; )
-
 (add-hook! coq-mode
   ;;(iris-input-config)
   ;; Map symbols to other for indentation

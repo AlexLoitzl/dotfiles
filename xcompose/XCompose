@@ -110,7 +110,6 @@ include "%L"
 <Multi_key> <slash> <n> <i>		             : "∌"	U220C		# DOES NOT CONTAIN AS MEMBER
 
 <Multi_key> <asciitilde> <equal>             : "≅"	U2245		# CONGRUENCE
-<Multi_key> <asciitilde> <ascitilde>	     : "≅"	U2248		# APPROXIMATELY EQUAL 
 <Multi_key> <equal> <equal>		             : "≡"	U2261		# IDENTICAL TO
 <Multi_key> <colon> <equal> 		         : "≔"  U2254		# COLON EQUALS
 <Multi_key> <equal> <colon> 		         : "≕"  U2255		# EQUALS COLON

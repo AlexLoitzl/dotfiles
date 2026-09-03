@@ -49,9 +49,11 @@
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;; (unpin! t)
 
-(package! lean4-mode :recipe
-  (:host github
-   :repo "leanprover/lean4-mode"
-   :files ("*.el" "data")))
+;; (package! lean4-mode :recipe
+;;   (:host github
+;;    :repo "leanprover/lean4-mode"
+;;    :files ("*.el" "data")))
 
 (package! delight)
+
+(package! ox-hugo)

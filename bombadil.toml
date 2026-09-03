@@ -16,6 +16,7 @@ doom = { source = "doom", target = ".config/doom" }
 i3status-rust = { source = "i3status-rust", target = ".config/i3status-rust" }
 alacritty = { source = "alacritty", target = ".config/alacritty" }
 zshrc = { source = "zsh/zshrc", target = ".zshrc" }
+zshenv = { source = "zsh/zshenv", target = ".zshenv" }
 xcompose = { source = "xcompose/XCompose", target = ".XCompose" }
 filen = { source = "filen", target = ".config/filen" }
 
