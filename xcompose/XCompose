@@ -99,8 +99,8 @@ include "%L"
 <Multi_key> <less> <equal>		             : "≤"	U2264		# LESS-THAN OR EQUAL TO
 <Multi_key> <greater> <equal>		         : "≥"	U2265		# GREATER-THAN OR EQUAL TO
 
-<Multi_key> <less> <less>        	         : "≪"	U226A		# MUCH LESS-THAN
-<Multi_key> <greater> <greater> 		     : "≫"	U226B		# MUCH GREATER-THAN
+<Multi_key> <less> <less>        	         : "«"	U226A		# LEFT DOUBLE ANGLE QUOTATION MARK
+<Multi_key> <greater> <greater> 		     : "»"	U226B		# Right DOUBLE ANGLE QUOTATION MARK
 
 <Multi_key> <p> <r>	<e> <c>	                 : "⪯"	U2AAF		# PRECEQ
 
