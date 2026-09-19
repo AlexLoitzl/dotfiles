@@ -131,6 +131,7 @@ include "%L"
 <Multi_key> <c> <i> <r>                      : "∘"   U2218           # RING OPERATOR (function composition)
 <Multi_key> <t> <i> <m>                      : "⨯"   U2A2F           # CROSS PRODUCT
 <Multi_key> <c> <d> <o> <t>                  : "⋅"   U22C5           # DOT OPERATOR (dot product)
+<Multi_key> <m> <d> <o> <t>                  : "·"   U0xB7           # OTHER DOT OPERATOR (mdot) 
 <Multi_key> <o> <p> <l>                      : "⊕"  U2295    # CIRCLED PLUS
 
 
