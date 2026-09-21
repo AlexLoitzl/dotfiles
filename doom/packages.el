@@ -57,3 +57,9 @@
 (package! delight)
 
 (package! ox-hugo)
+
+(unpin! nael)
+(package! nael
+  :recipe (:host codeberg
+           :repo "AlexLoitzl/nael"
+           :branch "mine"))
