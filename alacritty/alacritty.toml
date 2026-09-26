@@ -5,5 +5,5 @@ size = 10
 shell = "/usr/bin/zsh"
 [general]
 import = [
-"~/.config/alacritty/themes/themes/ashes_light.toml"
+"{{misc.theme}}"
 ]

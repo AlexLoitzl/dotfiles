@@ -14,7 +14,7 @@ vars = [ "secrets.toml" ]
 sway = { source = "sway", target = ".config/sway", vars = "sway/vars.toml" }
 doom = { source = "doom", target = ".config/doom" }
 i3status-rust = { source = "i3status-rust", target = ".config/i3status-rust" }
-alacritty = { source = "alacritty", target = ".config/alacritty" }
+alacritty = { source = "alacritty", target = ".config/alacritty", vars = "alacritty/dark-vars.toml" }
 zshrc = { source = "zsh/zshrc", target = ".zshrc" }
 zshenv = { source = "zsh/zshenv", target = ".zshenv" }
 xcompose = { source = "xcompose/XCompose", target = ".XCompose" }
@@ -27,4 +27,7 @@ prehooks = [ "$HOME/dotfiles/sway/right-monitor.sh $HOME/dotfiles/sway/vars.toml
 prehooks = [ "$HOME/dotfiles/sway/right-monitor.sh $HOME/dotfiles/sway/work-vars.toml" ]
 
 [profiles.work.dots]
-sway = {source ="sway/config", target = ".config/sway", vars = "sway/work-vars.toml"}
+sway = { vars = "sway/work-vars.toml"}
+
+[profiles.light.dots]
+alacritty = { vars = "alacritty/light-vars.toml" }
