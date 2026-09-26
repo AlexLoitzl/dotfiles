@@ -3,3 +3,7 @@ normal = {family = "Fira Code", style = "Regular" }
 size = 10
 [terminal]
 shell = "/usr/bin/zsh"
+[general]
+import = [
+"~/.config/alacritty/themes/themes/ashes_light.toml"
+]
