@@ -3,14 +3,9 @@
 CONFIG=$1
 
 # Read display from sway and take last one
-DISPLAY="$(swaymsg -t get_outputs -p | awk '/Output/ && !/disabled/ {print $2}' | tail -1)"
+OUTPUT="$(swaymsg -t get_outputs -p | awk '/Output/ && !/disabled/ && $2 != "eDP-1" {print $2}' | tail -1)"
+OUTPUT="${OUTPUT:-DVI-I-1}" # Set fallback dummy DVI-I-1 if no second screen
 # Remove last line
-sed -i '$ d' $CONFIG
+sed -i '$ d' "$CONFIG"
 
-# If the display is the laptop's monitor, use some dummy instead
-if [ "$DISPLAY" = "eDP-1" ]; then
-  echo "right = \"DVI-I-1\"" >> $CONFIG 
-else
-  echo "right = \"$DISPLAY\"" >> $CONFIG 
-fi
-
+echo "right = \"$OUTPUT\"" >> "$CONFIG"
