@@ -58,8 +58,12 @@
 
 (package! ox-hugo)
 
-(unpin! nael)
+;; (unpin! nael)
+;; (package! nael
+;;   :recipe (:host codeberg
+;;            :repo "AlexLoitzl/nael"
+;;            :branch "mine"))
+
 (package! nael
-  :recipe (:host codeberg
-           :repo "AlexLoitzl/nael"
-           :branch "mine"))
+  :recipe (:local-repo "/home/alex/git/nael"
+           :build (:not compile)))
