@@ -5,6 +5,5 @@
   ;; Change commenting style to use single line comments
   (setq-local comment-start "--")
   (setq-local comment-end "")
-  (setq eldoc-echo-area-prefer-doc-buffer t))
 
 ;;; +lean.el ends here
