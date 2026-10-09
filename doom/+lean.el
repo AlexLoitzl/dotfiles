@@ -4,6 +4,6 @@
   (eglot-ensure)
   ;; Change commenting style to use single line comments
   (setq-local comment-start "--")
-  (setq-local comment-end "")
+  (setq-local comment-end ""))
 
 ;;; +lean.el ends here
