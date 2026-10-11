@@ -64,6 +64,6 @@
 ;;            :repo "AlexLoitzl/nael"
 ;;            :branch "mine"))
 
-(package! nael
-  :recipe (:local-repo "/home/alex/git/nael"
-           :build (:not compile)))
+(package! nael :recipe (:local-repo "/home/alex/git/nael"
+                        :files ("nael/*.el" "nael/nael.info" "nael/nael.texi"
+                                "nael/NOTICE" "nael/LICENSE*")))
